@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app-window {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-first {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(8, 31, 94),rgb(3, 11, 54),black);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-first-content{
+  display: flex;
+  flex-direction: row;
+  flex: 90%;
+  margin: 12em;
+  margin-top: 5em;
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app-image {
+  /* background-color: brown; */
+  padding: 2em;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.app-header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app-title{
+  /* background-color: chartreuse; */
+  margin-top: 15vh;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.app-subtitle{
+  font-size: 1.8em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  font-weight: bold;
+}
+
+.app-next{
+  background-color: transparent;
+  padding: 1em;
+}
+
+#down {
+  cursor: pointer;
+  height: 8vh;
+  margin-left: 44vw;
+}
+
+#down:hover {
+  opacity: 0.5;
+}
+
+#up {
+  cursor: pointer;
+  height: 8vh;
+  margin-left: 2vw;
+  transform: rotate(180deg);
+}
+
+#up:hover {
+  opacity: 0.5;
+}
+
+.app-second {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(8, 31, 94),rgb(3, 11, 54),black);
+}
+
+.select-country{
+  align-self:flex-end;
+  width: 12vw;
+  height: 7vh;
+  margin: 2vh;
+  margin-bottom: 0;
+  margin-right: 8vw;
+  /* background-color: lawngreen; */
+}
+
+.select-country select{
+  width: 12vw;
+  height: 7vh;
+  border: none;
+  color: cyan;
+  outline: 1px solid rgb(98, 0, 255);
+  background-color: rgb(98, 0, 255, 0.2);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       
+}
+
+.select-country select:hover{
+  color: rgb(133, 83, 248);
+  outline: 1px solid rgb(133, 83, 248);
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  margin: 5vw;
+  margin-bottom: 1vh;
+  margin-top: 0;
+}
+
+.card {
+  height: 25vh;
+  width: 18vw;
+  margin: 2em;
+  border-radius: 1.5em;
+  color: black;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 0px 10px 2px black;
+}
+
+.card h1:hover{
+  font-size: 3.5em;
+  transition-delay: 0.2s; 
+  -webkit-transition-delay: 0.2s;
+}
+
+.card h1{
+  padding-top: 0.2em;
+  font-size: 3em;
+}
+
+.card h3{
+  padding-top: 0.5em;
+}
+
+.card h2{
+  padding-top: 0.7em;
+  overflow: hidden;
+}
+
+.card-color {
+  border-radius: 1.5em 1.5em 0em 0em;
+  padding: 0.8em;
+}
+
+.graph-header {
+  padding-left: 10vw;
+  padding-bottom: 5vh;
+  color:cyan;
+  text-shadow: 1px 1px black;
+}
+
+.app-third {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(8, 31, 94),rgb(3, 11, 54),black);
+}
+
+.app-third-title{
+  color:cyan;
+  padding: 5vh;
+  padding-left: 10vw;
+}
+
+.stats-table{
+  width: 80vw;
+  height: 74vh;
+  overflow: auto;
+  text-transform: uppercase;
+  
+}
+
+.stats-table th,td,tr{
+  padding: 1em;
+  text-align: center;
+  border: 0.1px solid white;
+  border-bottom: none;
+  border-right: none;
+}
+
+.stats-outer{
+  overflow: hidden;
+  margin-left: 10vw;
+  width: 78vw;
+  height: 80vh;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 2px;
 }
